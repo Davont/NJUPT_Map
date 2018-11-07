@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="js/layui/css/layui.css" media="all">
+    <script src="js/svg.js"></script>
+    <title>校园导游系统</title>
+</head>
+
+<body>
+    <div id="map">
+        <div id="drawing"></div>
+        <form class="layui-form form">
+            <div class="layui-form-item">
+                <div class="layui-row">
+                    <div class="layui-input-block layui-col-md1">
+                        <select name="first" lay-filter="first">
+                            <option value="">请选择起始点</option>
+                        </select>
+                    </div>
+                    <i class="layui-icon layui-icon-right icon" style="font-size: 35px"></i>
+                    <div class="layui-input-block layui-col-md1">
+                        <select name="last" lay-filter="last">
+                            <option value="">请先选择起始点</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn" lay-submit lay-filter="*">最短路线</button>
+                    <button class="layui-btn" lay-submit lay-filter="allPath">所有路径</button>
+                </div>
+            </div>
+        </form>
+        <ul>
+            <li class="view" id="view1">
+                <div class="blur"></div>
+                <div class="text">0南门</div>
+            </li>
+            <li class="view" id="view2">
+                <div class="blur"></div>
+                <div class="text">1圆楼</div>
+            </li>
+            <li class="view" id="view3">
+                <div class="blur"></div>
+                <div class="text">2教学楼</div>
+            </li>
+            <li class="view" id="view4">
+                <div class="blur"></div>
+                <div class="text">3湖</div>
+            </li>
+            <li class="view" id="view5">
+                <div class="blur"></div>
+                <div class="text">4南一餐厅</div>
+            </li>
+            <li class="view" id="view6">
+                <div class="blur"></div>
+                <div class="text">5栗子山</div>
+            </li>
+            <li class="view" id="view7">
+                <div class="blur"></div>
+                <div class="text">6图书馆</div>
+            </li>
+            <li class="view" id="view8">
+                <div class="blur"></div>
+                <div class="text">7南二餐厅</div>
+            </li>
+            <li class="view" id="view9">
+                <div class="blur"></div>
+                <div class="text">8鼎山</div>
+            </li>
+            <li class="view" id="view10">
+                <div class="blur"></div>
+                <div class="text">9东门</div>
+            </li>
+            <li class="view" id="view11">
+                <div class="blur"></div>
+                <div class="text">10南操场</div>
+            </li>
+            <li class="view" id="view12">
+                <div class="blur"></div>
+                <div class="text">11学科楼</div>
+            </li>
+            <li class="view" id="view13">
+                <div class="blur"></div>
+                <div class="text">12青春剧场</div>
+            </li>
+            <li class="view" id="view14">
+                <div class="blur"></div>
+                <div class="text">13南三食堂</div>
+            </li>
+            <li class="view" id="view15">
+                <div class="blur"></div>
+                <div class="text">14北操场</div>
+            </li>
+            <li class="view" id="view16">
+                <div class="blur"></div>
+                <div class="text">15北门</div>
+            </li>
+        </ul>
+    </div>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="js/graph.js"></script>
+    <script src="js/layer/layer.js"></script>
+    <script src="js/layui/layui.js"></script>
+    <script src="js/line.js"></script>
+    <script src="js/submit.js"></script>
+</body>
+
+</html>
